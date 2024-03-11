@@ -1,0 +1,40 @@
+
+//vue 환경설정
+npm install vue //vue 설치
+npm vue -v //vue 버전확인
+-- npm install -g @vue/cli c //프로젝트 생성 및 관리 라이브러리
+-- npm i -g @vue/cli-init
+-- vue init webpack vue_board //새프로젝트 생성 --현재 레거시로 취급됨 (vue2)
+
+vue create --help // <<webpack대신 프로젝트 생성하는 또다른 방법~~ 혹은
+vue ui // 이걸 치면 gui로 생성할 수 있슴. vue_board_new << vue3 버전 사용
+
+npm init vue@latest --> 최신버전으로 생성ㄱ vue 3.9 ... webpack 대신 vite라는 더 빠른 빌드 툴 이라고 함;
+
+//뷰 실행 시
+cd vue_board
+  npm run dev
+
+
+
+// 포켓베이스 환경설정
+PS D:\jlee\vue_nodeJS> cd ./pocketbase
+./pocketbase serve
+
+그러고선 http://127.0.0.1:8090/_/ URL로 이동
+관리자 페이지에서 컬렉션 생성 ㄱ
+ljh148454@gmail.com
+
+
+
+//spring-boot 프로젝트 생성
+일단 marketplace에서 Spring Boot Extension Pack을 인스톨 한다. 
++ Extension Pack for Java 도 인스톨 ㄱㄱ
+Ctrl + Shift + P 를 눌러 커맨드팔레트를 열어본다. 
+ext install vscode-spring-initializr 라는 명령어를 치면 새 springboot프로젝트를 생성 가능
+Right click inside the pom.xml file and choose Edit starters for dependency refactoring. (Gradle project is not supported yet, PR is welcome for it.)
+
+build.gradle 파일의 dependencies에다가 implementation 'org.springframework.boot:spring-boot-starter-actuator' 추가
+
+spring-boot-back-end\demo\src\main\java\com\example\demo\DemoApplication.java
+해당 경로에서 오른쪽 클릭 -> Run java 누르면 실행댐!!~~~
